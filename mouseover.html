@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#mouse").mouseover(function(){
+				$("#mouse").css("color","blue");
+				$("#mouse").css("background-color", "yellow");
+			});
+			$("#mouse").mouseout(function(){
+				$("#mouse").css("color","white");
+				$("#mouse").css("background-color","black");
+			});
+		});
+	</script>
+	<style type="text/css">
+		#mouse
+		{
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+
+<input type="text" value="please move the mouse pointer over this text box" id="mouse">
+
+</body>
+</html>

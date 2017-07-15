@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signin form</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="external/jquery/jquery.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="jquery-ui.min.css">
+		<script>
+			$(function(){$("#date").datepicker();});
+		</script>
+		<style type="text/css">
+			fieldset
+			{
+				width:300px;
+				align:center;
+			}
+			body
+			{
+				background-color: beige;
+			}
+		</style>
+	<script type="text/javascript" src="validation.js">
+	</script>
+
+</head>
+<body><center>
+<h3>Create an account</h3>
+<form method="post" action="">
+<fieldset>
+	<legend>User Details</legend>
+	<label>First Name:</label>
+	<input type="text" id="fname">
+	<br><br>
+	<label>Surname:</label>
+	<input type="text" id="sname">
+	<br><br>
+	<label>Email</label>
+	<input type="Email" id="email">
+	<br><br>
+	<label>Password</label>
+	<input type="Password" id="pwd">
+</fieldset><br>
+<fieldset>
+	<legend>Gender</legend>
+	<input type="radio" id="male">male<input type="radio" id="female">female<br>
+</fieldset><br>
+<fieldset>
+	<legend>Date of Birth</legend>
+	<input type="text" id="date">
+</fieldset><br>
+<fieldset>
+	<legend>Education</legend>
+	<input type="checkbox" id="ug">UG
+	<input type="checkbox" id="pg">PG
+</fieldset> <br>
+<input type="button" name="submit" value="submit" onclick="validate();">
+</form></center>
+</body>
+</html>
